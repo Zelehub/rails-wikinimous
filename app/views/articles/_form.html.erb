@@ -1,0 +1,9 @@
+<div class="row justify-content-center">
+  <%= simple_form_for(article) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :content %>
+    <%= f.submit "Save" %>
+  <% end %>
+</div>
+
+<%= link_to "Go back", articles_path, class: "btn btn-primary col-4" %>
